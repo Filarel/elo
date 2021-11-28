@@ -1,0 +1,61 @@
+#include <iostream>
+#include <ctime>
+#include <cstdlib>
+#include <time.h>
+
+using namespace std;
+main() 
+{
+	srand(time(NULL));
+	int a[6];
+	for (int x=0;x<6;x++){
+		a[x] = rand() % 50;
+		cout<<a[x]<<endl;
+	}
+	for (int x=0;x<6;x++){
+		for (int i=0;i<6;i++){
+			if (i==x)
+				i++;
+			if (a[x]==a[i])
+				cout<<"liczby sa takie same"<<endl;
+		}
+	}
+	
+	
+		
+	
+		
+
+	
+	
+	
+	
+	/*
+	l1 = rand() % 50;
+	cout<<l1<<endl;
+	l2 = rand() % 50;
+		while(l2==l1){
+			l2 = rand() % 50;
+		}
+	l3 = rand() % 50;
+		while(l3==l1 || l3==l2){
+			l3 = rand() % 50;
+		}
+	l4 = rand() % 50;
+		while(l4==l1 || l4==l2 || l4==l3){
+			l4 = rand() % 50;
+		}
+	l5 = rand() % 50;
+		while(l5==l1 || l5==l2 || l5==l3 || l5==l4){
+			l5 = rand() % 50;
+		}
+	l6 = rand() % 50;
+		while(l6==l1 || l6==l2 || l6==l3 || l6==l4 || l6==l5){
+			l6 = rand() % 50;
+		}
+	
+	cout<<l2<<endl<<l3<<endl<<l4<<endl<<l5<<endl<<l6<<endl;
+	*/
+ 
+return 0;
+}
